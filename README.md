@@ -5,7 +5,7 @@ Los algoritmos Pseudoaletorios utilizados en este repositorio se basan en el lib
 ## Menú 
 Para acceder a cada método accede a la barra de navegación desplazadora de la esquina superior derecha. Contiene el listado de los algoritmos que se hablarán a continuación.
 
-![alt text](image-1.png)
+![alt text](img/image-1.png)
 
 ## Cuadrados Medios
 
@@ -13,7 +13,7 @@ Este algoritmo no congruencial fue propuesto en la década de los cuarenta del s
 
 Requiere un número entero detonador (llamado semilla) con D dígitos, el cual es elevado al cuadrado para seleccionar del resultado los D dígitos del centro; el primer número r¡ se determina simplemente anteponiendo el "0." a esos dígitos.  
 
-![alt text](image.png)
+![alt text](img/image.png)
 
 ### Proceso 
 
@@ -31,7 +31,7 @@ Este es un algoritmo no congruencial que, al igual que el de cuadrados medios, t
 
 El proceso consiste en multiplicar estas dos semillas y extraer los **D** dígitos centrales del producto. Luego, la secuencia continúa multiplicando la semilla más reciente con el número generado previamente.
 
-![alt text](image-2.png)
+![alt text](img/image-2.png)
 
 ### Proceso
 1. Seleccionar dos semillas (X_0) y (X_1), ambas con **D** dígitos.
@@ -44,7 +44,7 @@ El proceso consiste en multiplicar estas dos semillas y extraer los **D** dígit
 ## Algoritmo de Multiplicador Constante
 Este algoritmo no congruencial se basa en multiplicar una semilla por una constante, ambas con **D** dígitos, y extraer los dígitos centrales del producto.
 
-![alt text](image-3.png)
+![alt text](img/image-3.png)
 
 ### Proceso
 1. Seleccionar una semilla (X_0) con **D** dígitos.
@@ -62,7 +62,7 @@ El algoritmo congruencial lineal es uno de los más utilizados para la generaci�
 
 Donde (X_0) es la semilla, (a) es la constante multiplicativa, (c) es la constante aditiva, y (m) es el módulo.
 
-![alt text](image-4.png)
+![alt text](img/image-4.png)
 
 ### Proceso
 1. Seleccionar los parámetros: semilla (X_0), constantes (k), y (g).
@@ -75,7 +75,7 @@ Donde (X_0) es la semilla, (a) es la constante multiplicativa, (c) es la constan
 ## Algoritmo Congruencial Multiplicativo
 Este algoritmo es una variante del anterior, con la diferencia de que no hay constante aditiva ((c = 0)).
 
-![alt text](image-5.png)
+![alt text](img/image-5.png)
 
 ### Proceso
 1. Seleccionar una semilla (X_0), las constantes (k), y un módulo (g).
@@ -92,14 +92,14 @@ Este algoritmo genera números a partir de una secuencia inicial de enteros y su
 ### Proceso
 1. Definir una secuencia inicial de números (X_1, X_2, ... , X_n).
 
-![alt text](image-7.png)
+![alt text](img/image-7.png)
 
 2. Ingresar los valores de Módulo (**m**) e Cantidad de datos (**n**). 
 3. Generar el siguiente número pseudoaleatorio mediante la ecuación:
 
 * X_{i} = (X_{i-n} + X_{i-1}) mod m
 
-![alt text](image-8.png)
+![alt text](img/image-8.png)
 
 [`código javaScript`](JS/congruencialAditivo.js), [`Archivo html`](index.html)
 
@@ -107,10 +107,14 @@ Este algoritmo genera números a partir de una secuencia inicial de enteros y su
 Es una versión no lineal del algoritmo congruencial lineal, donde la fórmula es:
 * X_{i+1} = (aX_i^2 + bX_i + c) mod m
 
-![alt text](image-9.png)
+![alt text](img/image-9.png)
 
 ### Proceso
 1. Definir los parámetros: Semilla (x_0),  (g), (a), (b) y (c).
 2. Calcular los números pseudoaleatorios mediante la fórmula cuadrática.
 
 [`código javaScript`](JS/congruencialCuadratico.js), [`Archivo html`](index7.html)
+
+---
+### Requisitos para su uso
+* Conexión a internet: se hace uso de framework Boostrap 5. 
