@@ -1,5 +1,5 @@
 # Algoritmos Pseudoaleatorios 
-Los algoritmos Pseudoaletorios utilizados en este repositorio se basan en el libro: 
+Los algoritmos Pseudoaleatorios utilizados en este repositorio se basan en el libro: 
 * Simulacion y análisis de sistemas 2da edicion (Capítulo 2) 
 
 ## Menú 
