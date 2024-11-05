@@ -57,12 +57,12 @@ document.getElementById('generarDatosBtn').addEventListener('click', function ()
     document.getElementById('t01').innerHTML =
     `<table id="t01">
         <tr>
-            <th>X<sub>n</sub></th> <!-- posicion de x -->
-            <th>X<sub>i</sub></th> <!-- valor de primer x -->
-            <th>X<sub>i+1</sub></th> <!-- valor de segundo x -->
-            <th>X<sub>i</sub> * X<sub>i+1</sub></th> <!-- valor de producto -->
-            <th>X<sub>i+2</sub></th> <!-- valor de x extraido los 4 digitos-->
-            <th>r<sub>i</sub></th> <!-- valor de r -->
+            <th>X<sub>n</sub></th>
+            <th>X<sub>i</sub></th>
+            <th>X<sub>i+1</sub></th>
+            <th>X<sub>i</sub> * X<sub>i+1</sub></th>
+            <th>X<sub>i+2</sub></th>
+            <th>r<sub>i</sub></th>
         </tr>
     </table>`;
 
@@ -78,11 +78,11 @@ function validarDatos(semilla, semilla2) {
 function filaParametros(i, x0, x1, Y, X2, ri) {
     return `
     <tr id ="result${i}">
-        <td>X<sub>${i}</sub></td> <!-- posicion de x -->
-        <td>${x0}</td> <!-- valor de primer x -->
-        <td>${x1}</td> <!-- valor de segundo x -->
-        <td>${Y}</td> <!-- valor de producto -->
-        <td>${X2}</td> <!-- valor de x extraido los 4 digitos-->
-        <td>${ri.toFixed(4)}</td> <!-- valor de r -->
+        <td>X<sub>${i}</sub></td>
+        <td>${x0}</td>
+        <td>${x1}</td>
+        <td>${Y}</td>
+        <td>${X2}</td>
+        <td>${ri.toFixed(4)}</td>
     </tr> `;
 }

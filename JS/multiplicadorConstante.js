@@ -72,11 +72,11 @@ document.getElementById('generarDatosBtn').addEventListener('click', function ()
     document.getElementById('t01').innerHTML =
         `<table id="t01">
             <tr>
-                <th>X<sub>n</sub></th> <!-- posicion de x -->
-                <th>a * X<sub>i</sub></th> <!-- representacion de mulpicacion -->
-                <th>x<sub>i+1</th> <!-- valor de mulpicacion -->
-                <th>producto</th> <!-- valor de xi+1 -->
-                <th>r<sub>i</sub></th> <!-- valor de r -->
+                <th>X<sub>n</sub></th>
+                <th>a * X<sub>i</sub></th>
+                <th>x<sub>i+1</th>
+                <th>producto</th>
+                <th>r<sub>i</sub></th>
             </tr>
         </table>`;
 
@@ -92,10 +92,10 @@ function validarDatos(semilla, constante) {
 function filaParametros(i, a, x_a, Y, X0, ri) {
     return `
     <tr id="result${i}">
-        <td>X<sub>${i}</sub></td> <!-- posicion de x -->
-        <td>${a} * ${x_a}</td> <!-- representacion de multiplicacion -->
-        <td>${Y}</td> <!-- valor de multiplicacion -->
-        <td>${X0}</td> <!-- valor de xi+1 -->
-        <td>${ri.toFixed(4)}</td> <!-- valor de r -->
+        <td>X<sub>${i}</sub></td>
+        <td>${a} * ${x_a}</td>
+        <td>${Y}</td>
+        <td>${X0}</td>
+        <td>${ri.toFixed(4)}</td>
     </tr> `;
 }

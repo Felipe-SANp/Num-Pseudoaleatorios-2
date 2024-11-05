@@ -62,11 +62,11 @@ document.getElementById('generarDatosBtn').addEventListener('click', function ()
     document.getElementById('t01').innerHTML =
     `<table id="t01">
         <tr>
-            <th>X<sub>n</sub></th> <!-- posicion de x -->
-            <th>X<sub>i</sub></th> <!-- valor de x -->
-            <th>X<sub>i</sub><sup>2</sup></th> <!-- valor de x^2 -->
-            <th>X<sub>i</sub></th> <!-- valor de x extraido los 4 digitos-->
-            <th>r<sub>i</sub></th> <!-- valor de r -->
+            <th>X<sub>n</sub></th>
+            <th>X<sub>i</sub></th>
+            <th>X<sub>i</sub><sup>2</sup></th>
+            <th>X<sub>i</sub></th>
+            <th>r<sub>i</sub></th>
         </tr>
     </table>`;
 

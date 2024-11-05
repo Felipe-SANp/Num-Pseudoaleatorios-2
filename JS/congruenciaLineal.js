@@ -71,12 +71,12 @@ document.getElementById('generarDatosBtn').addEventListener('click', function() 
     document.getElementById('t01').innerHTML =
     `<table id="t01">
         <tr>
-            <th>X<sub>n</sub></th> <!-- posicion de x -->
-            <th>a * X<sub>i</sub> + C</th> <!-- valor de a * xn + c -->
-            <th>a * X<sub>i</sub> + C MOD M</th> <!-- valor a * xn + c MOD M -->
-            <th>X<sub>i+1</sub></th> <!-- valor de xn+1 -->
-            <th>X<sub>i+1</sub> / M-1</th> <!-- representacion de xn+1 / M-1-->
-            <th>r<sub>i</sub> = X<sub>i+1</sub> / M-1</th> <!-- valor de ri = xn+1 / M-1-->
+            <th>X<sub>n</sub></th>
+            <th>a * X<sub>i</sub> + C</th>
+            <th>a * X<sub>i</sub> + C MOD M</th>
+            <th>X<sub>i+1</sub></th>
+            <th>X<sub>i+1</sub> / M-1</th>
+            <th>r<sub>i</sub> = X<sub>i+1</sub> / M-1</th>
         </tr>
     </table>`;
 
@@ -101,11 +101,11 @@ function filaParametros(a,c,n,m){
 function filaParametros2(a, i, x_a, c, m, oper, Xi, ri){
     return `
     <tr>
-        <td>X<sub>${i}</sub></td> <!-- posicion de x -->
-        <td>${a} * ${x_a}</sub> + ${c}</td> <!-- valor de a * xn + c -->
-        <td>${oper} MOD ${m}</td> <!-- valor a * xn + c MOD M -->
-        <td>${Xi}</td> <!-- valor de xn+1-->
-        <td>${Xi} / ${m - 1}</td> <!-- representacion de xn+1 / M-1-->
-        <td>${ri.toFixed(4)}</td> <!-- valor de ri = xn+1 / M-1-->
+        <td>X<sub>${i}</sub></td>
+        <td>${a} * ${x_a}</sub> + ${c}</td>
+        <td>${oper} MOD ${m}</td>
+        <td>${Xi}</td>
+        <td>${Xi} / ${m - 1}</td>
+        <td>${ri.toFixed(4)}</td>
     </tr> `;
 }

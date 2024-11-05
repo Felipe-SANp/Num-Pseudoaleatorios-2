@@ -50,13 +50,13 @@ function congruencialCuadratico(X0, g, a, b, c) {
 
         const fila = `
         <tr">
-            <td>X<sub>${i}</sub></td> <!-- posicion de x -->
-            <td>${a} * ${x_c}</td> <!-- representacion a * xi^2 -->
-            <td>${x_a} + ${b} * ${x_i} + ${c}</td> <!-- representacion de a * xi^2 + b * xi + c -->
-            <td>${x_b} MOD ${m}</td> <!-- representacion de resultado MOD M -->
-            <td>${Xi}</td> <!-- resultado de lo anterior -->
-            <td>${Xi} / ${m-1}</td> <!-- ri = Xi+1/M-1 -->
-            <td>${ri.toFixed(4)}</td> <!-- ri -->
+            <td>X<sub>${i}</sub></td>
+            <td>${a} * ${x_c}</td>
+            <td>${x_a} + ${b} * ${x_i} + ${c}</td>
+            <td>${x_b} MOD ${m}</td>
+            <td>${Xi}</td>
+            <td>${Xi} / ${m-1}</td>
+            <td>${ritoFixed(4)}</td>
         </tr> `;
             document.getElementById('t01').innerHTML += fila;
     }
@@ -84,13 +84,13 @@ document.getElementById('generarDatosBtn').addEventListener('click', function() 
     document.getElementById('t01').innerHTML =
     `<table id="t01">
         <tr>
-            <th>X<sub>i</sub></th> <!-- posicion de x -->
-            <th>a * X<sub>i</sub><sup>2</sup></th> <!-- representacion a * xi^2 -->
-            <th>a * X<sub>i</sub><sup>2</sup> + b + c</th> <!-- representacion de a * xi^2 + b * xi + c -->
-            <th>a * X<sub>i</sub><sup>2</sup> + b + c MOD m</th> <!-- representacion de resultado MOD M -->
-            <th>X<sub>i+1</sub></th> <!-- resultado de lo anterior -->
-            <th>r<sub>i</sub> = X<sub>i+1</sub> / M-1</th> <!-- ri = Xi+1/M-1 -->
-            <th>r<sub>i</sub></th> <!-- ri -->
+            <th>X<sub>i</sub></th>
+            <th>a * X<sub>i</sub><sup>2</sup></th>
+            <th>a * X<sub>i</sub><sup>2</sup> + b + c</th>
+            <th>a * X<sub>i</sub><sup>2</sup> + b + c MOD m</th>
+            <th>X<sub>i+1</sub></th>
+            <th>r<sub>i</sub> = X<sub>i+1</sub> / M-1</th>
+            <th>r<sub>i</sub></th>
         </tr>
     </table>`;
     congruencialCuadratico(semilla, g, a, b, c);
