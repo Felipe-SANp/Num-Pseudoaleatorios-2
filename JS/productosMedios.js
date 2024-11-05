@@ -83,6 +83,6 @@ function filaParametros(i, x0, x1, Y, X2, ri) {
         <td>${x1}</td> <!-- valor de segundo x -->
         <td>${Y}</td> <!-- valor de producto -->
         <td>${X2}</td> <!-- valor de x extraido los 4 digitos-->
-        <td>${ri}</td> <!-- valor de r -->
+        <td>${ri.toFixed(4)}</td> <!-- valor de r -->
     </tr> `;
 }

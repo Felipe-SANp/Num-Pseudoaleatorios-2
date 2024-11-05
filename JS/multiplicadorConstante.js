@@ -96,6 +96,6 @@ function filaParametros(i, a, x_a, Y, X0, ri) {
         <td>${a} * ${x_a}</td> <!-- representacion de multiplicacion -->
         <td>${Y}</td> <!-- valor de multiplicacion -->
         <td>${X0}</td> <!-- valor de xi+1 -->
-        <td>${ri}</td> <!-- valor de r -->
+        <td>${ri.toFixed(4)}</td> <!-- valor de r -->
     </tr> `;
 }

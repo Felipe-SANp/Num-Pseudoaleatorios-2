@@ -106,6 +106,6 @@ function filaParametros2(a, i, x_a, c, m, oper, Xi, ri){
         <td>${oper} MOD ${m}</td> <!-- valor a * xn + c MOD M -->
         <td>${Xi}</td> <!-- valor de xn+1-->
         <td>${Xi} / ${m - 1}</td> <!-- representacion de xn+1 / M-1-->
-        <td>${ri}</td> <!-- valor de ri = xn+1 / M-1-->
+        <td>${ri.toFixed(4)}</td> <!-- valor de ri = xn+1 / M-1-->
     </tr> `;
 }
