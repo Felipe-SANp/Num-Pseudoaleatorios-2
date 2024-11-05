@@ -58,7 +58,7 @@ var GeneradorColumnas = (function () {
         document.getElementById('valores').style.display = 'block';
 
         document.getElementById('t02').innerHTML =
-        `<table id="t02" style="width:500px">
+        `<table id="t02">
             <tr>
                 <th>X<sub>i</sub></th>
                 <th>Valor</th>
@@ -76,7 +76,7 @@ var GeneradorColumnas = (function () {
             var fila = `
             <tr>
                 <td>X<sub>${k}</sub></td>
-                <td><input type="number" id="id-semilla${k}" placeholder="semilla ${k}" style="border: 1px solid #ffffff;"></td>
+                <td><div class="col-auto"><input type="number" class="form-control" id="id-semilla${k}" placeholder="semilla ${k}"></div></td>
             </tr>`;
             document.getElementById('t02').innerHTML += fila;
         }
@@ -141,7 +141,7 @@ function filaParametros(a, i, xn, xn2, x_i_n, m, nuevoValor, result) {
         <td>${x_i_n} mod ${m}</td>
         <td>${nuevoValor}</td>
         <td>${nuevoValor} / ${m-1}</td>
-        <td>${result}</td>
+        <td>${result.toFixed(4)}</td>
     </tr>`;
 }
 
