@@ -74,12 +74,13 @@ document.getElementById('generarDatosBtn').addEventListener('click', function ()
 });
 
 function filaParametros(i, X_a, Y, Xn, rn){
+    let ri = parseFloat(`0.${Xn}`); // convertir Xn a número decimal, para redondear
     return `
     <tr id="result${i}">
-        <td>X<sub>${i}</sub></td> <!-- posicion de x -->
-        <td>${X_a}</td> <!-- valor de x -->
-        <td>${Y}</td> <!-- valor de x^2 -->
-        <td>${Xn}</td> <!-- valor de x extraido los 4 digitos-->
-        <td>${rn.toFixed(4)}</td> <!-- valor de r -->
+        <td>X<sub>${i}</sub></td> 
+        <td>${X_a}</td> 
+        <td>${Y}</td> 
+        <td>${Xn}</td> 
+        <td>${ri.toFixed(4)}</td>
     </tr> `;
 }
