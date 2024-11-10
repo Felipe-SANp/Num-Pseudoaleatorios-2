@@ -66,9 +66,6 @@ var GeneradorColumnas = (function () {
         </table>`;
 
         crearSemillas(parseInt(semillas));
-        document.getElementById("id-row-est").style.display = "block";
-        document.getElementById("tabla-1").style.display = "block";
-        document.getElementById("tabla-2").style.display = "block";
     }
 
     function crearSemillas(seed) {

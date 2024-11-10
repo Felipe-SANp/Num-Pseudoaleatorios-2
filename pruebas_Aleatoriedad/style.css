@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding-top: 5%;
+    height: 100vh;
+    background-color: #f7f9fc;
+    overflow: auto; /* Agrega esta línea */
+}
+.result {
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid #bbdefb;
+}

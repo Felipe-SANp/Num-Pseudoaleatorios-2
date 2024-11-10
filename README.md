@@ -24,7 +24,7 @@ Requiere un número entero detonador (llamado semilla) con D dígitos, el cual e
 
 Nota: Si no es posible obtener los D dígitos del centro del número Yi agregamos ceros a la izquierda del número Yi.
 
-[`código javaScript`](JS/cuadradosMedios.js), [`Archivo html`](menu.html)
+[`código javaScript`](JS/cuadradosMedios.js), [`Archivo html`](a_menu.html)
 
 ## Algoritmo de Productos Medios
 Este es un algoritmo no congruencial que, al igual que el de cuadrados medios, también fue propuesto en la década de los 40. La diferencia clave es que requiere **dos semillas** en lugar de una, ambas con el mismo número de dígitos (**D**). 
@@ -39,7 +39,7 @@ El proceso consiste en multiplicar estas dos semillas y extraer los **D** dígit
 3. En cada paso posterior, la semilla más antigua se reemplaza, y se multiplica la semilla más reciente con el número generado en el paso anterior.
 4. Repetir este proceso hasta obtener los **n** números deseados.
 
-[`código javaScript`](JS/productosMedios.js), [`Archivo html`](index3.html)
+[`código javaScript`](JS/productosMedios.js), [`Archivo html`](html/index3.html)
 
 ## Algoritmo de Multiplicador Constante
 Este algoritmo no congruencial se basa en multiplicar una semilla por una constante, ambas con **D** dígitos, y extraer los dígitos centrales del producto.
@@ -53,7 +53,7 @@ Este algoritmo no congruencial se basa en multiplicar una semilla por una consta
 4. Repetir el proceso con el nuevo valor (X_1) obtenido.
 
 <!-- descripción del proceso -->
-[`código javaScript`](JS/multiplicadorConstante.js), [`Archivo html`](index4.html)
+[`código javaScript`](JS/multiplicadorConstante.js), [`Archivo html`](html/index4.html)
 
 ## Algoritmo de Congruencia Lineal
 El algoritmo congruencial lineal es uno de los más utilizados para la generación de números pseudoaleatorios y sigue la fórmula recursiva:
@@ -70,7 +70,7 @@ Donde (X_0) es la semilla, (a) es la constante multiplicativa, (c) es la constan
 3. Calcular el siguiente número pseudoaleatorio usando la ecuación recursiva.
 4. Normalizar el valor dividiendo entre (m-1).
 
-[`código javaScript`](JS/congruenciaLineal.js), [`Archivo html`](index5.html)
+[`código javaScript`](JS/congruenciaLineal.js), [`Archivo html`](html/index5.html)
 
 ## Algoritmo Congruencial Multiplicativo
 Este algoritmo es una variante del anterior, con la diferencia de que no hay constante aditiva ((c = 0)).
@@ -83,7 +83,7 @@ Este algoritmo es una variante del anterior, con la diferencia de que no hay con
 * X_{i+1} = (aX_i) mod m
 3. Normalizamos el valor dividiendo entre (m-1)
 
-[`código javaScript`](JS/congruencialMultiplicativo.js), [`Archivo html`](index6.html)
+[`código javaScript`](JS/congruencialMultiplicativo.js), [`Archivo html`](html/index6.html)
 
 
 ## Algoritmo Congruencial Aditivo
@@ -101,7 +101,7 @@ Este algoritmo genera números a partir de una secuencia inicial de enteros y su
 
 ![alt text](img/image-8.png)
 
-[`código javaScript`](JS/congruencialAditivo.js), [`Archivo html`](index.html)
+[`código javaScript`](JS/congruencialAditivo.js), [`Archivo html`](html/index.html)
 
 ## Algoritmo Congruencial Cuadrático
 Es una versión no lineal del algoritmo congruencial lineal, donde la fórmula es:
@@ -113,7 +113,7 @@ Es una versión no lineal del algoritmo congruencial lineal, donde la fórmula e
 1. Definir los parámetros: Semilla (x_0),  (g), (a), (b) y (c).
 2. Calcular los números pseudoaleatorios mediante la fórmula cuadrática.
 
-[`código javaScript`](JS/congruencialCuadratico.js), [`Archivo html`](index7.html)
+[`código javaScript`](JS/congruencialCuadratico.js), [`Archivo html`](html/index7.html)
 
 ---
 ### Requisitos para su uso
