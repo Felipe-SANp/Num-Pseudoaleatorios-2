@@ -56,7 +56,7 @@ function congruencialCuadratico(X0, g, a, b, c) {
             <td>${x_b} MOD ${m}</td>
             <td>${Xi}</td>
             <td>${Xi} / ${m-1}</td>
-            <td>${ritoFixed(4)}</td>
+            <td>${ri.toFixed(4)}</td>
         </tr> `;
             document.getElementById('t01').innerHTML += fila;
     }
