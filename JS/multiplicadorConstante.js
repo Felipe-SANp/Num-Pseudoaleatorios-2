@@ -74,8 +74,8 @@ document.getElementById('generarDatosBtn').addEventListener('click', function ()
             <tr>
                 <th>X<sub>n</sub></th>
                 <th>a * X<sub>i</sub></th>
-                <th>x<sub>i+1</th>
                 <th>producto</th>
+                <th>x<sub>i+1</th>
                 <th>r<sub>i</sub></th>
             </tr>
         </table>`;
