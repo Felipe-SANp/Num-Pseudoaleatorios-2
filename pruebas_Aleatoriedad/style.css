@@ -3,11 +3,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     padding-top: 5%;
-    height: 100vh;
     background-color: #f7f9fc;
-    overflow: auto; /* Agrega esta línea */
+    overflow: auto;
 }
 .result {
     background-color: #e3f2fd;
